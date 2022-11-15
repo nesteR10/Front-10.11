@@ -1,0 +1,42 @@
+* {
+    font-size: 20px;
+  }
+  p {
+    color: green;
+  }
+  
+  h3 {
+    color: black;
+  }
+  .thefirst {
+    color:red;
+  }
+  #lorem51 {
+    color: brown;
+  }
+  .thesecond,
+  .thethird {
+    color: purple;
+  }
+  .some-class p {
+    color: darkred;
+  }
+  #new-id {
+    color: darkmagenta;
+  }
+  .new-class {
+    color: darkblue;
+  }
+  h4 {
+    color: indigo;
+  }
+  li {
+    color: teal;
+  }
+  li strong {
+    color: lightblue;
+  }
+  .nineclass,
+  .tenclass {
+    color: salmon;
+  }
