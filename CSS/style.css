@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  img {
+    max-width: 100%;
+  }
+  html {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #160a0a;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
+  }
+  .container {
+    width: 100%;
+    max-width: calc(1110px + 2rem);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .section1 {
+    background: #3d3333;
+  }
+  .card {
+    max-width: 300px;
+    display: inline-block;
+    margin: 1rem;
+    text-align: center;
+    background: rgb(251, 250, 250);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 20px #fffcfc;
+  }
