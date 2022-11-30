@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../fonts/font.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body class="body">
+    <header>
+        <nav class="nav-to-second">
+            <a href="../index.html" target="blank"><strong>На Головну</strong></a>
+        </nav>
+        <nav class="nav-to-autor">
+            <a href="./authorization.html" target="blank"><strong>Меню авторизації</strong></a>
+        </nav>
+    </header>
+    <main>
+        <section>
+          <h2>Пошук автомобілей</h2>
+            <form action="https://fom.in.ua/echo" method="post">
+                <label for="types-auto"><strong>Тип кузова</strong></label>
+                <br>
+                <select class="first" name="types-auto" id="types-auto">
+                    <option value="Седан">Седан</option>
+                    <option value="Позашляховик/Кросовер">Позашляховик/Кросовер</option>
+                    <option value="Лімузин">Лімузин</option>
+                    <option value="Купе">Купе</option>
+                    <option value="Універсал">Універсал</option>
+                </select>
+                <br>
+                <label for="marka"><strong>Марка авто:</strong></label>
+                <br>
+                <select name="marka" id="marka">
+                    <option value="Audi">Audi</option>
+                    <option value="BMW">BMW</option>
+                    <option value="Mersedes">Mersedes</option>
+                    <option value="Mazda">Mazda</option>
+                    <option value="Kia">Kia</option>
+                </select>
+                <br>
+                <label for="country-producing"><strong>Країна виробник</strong></label>
+                <br>
+                <select class="first" name="country-producing" id="country-producing">
+                    <option value="Німеччина">Німеччина</option>
+                    <option value="Японія">Японія</option>
+                    <option value="Франція">Франція</option>
+                    <option value="Італія">Італія</option>
+                    <option value="Китай">Китай</option>
+                    <option value="Чехія">Чехія</option>
+                </select>
+                <br>
+                <p><strong>Ціна</strong></p>
+                <select name="vid_price" id="priceFrom" data-placeholder="від">
+                    <option value="0" selected="selected">від</option>
+                    <option value="0">0 usd</option>
+                    <option value="5000">5000 usd</option>
+                    <option value="10000">10000 usd</option>
+                    <option value="15000">15000 usd</option>
+                    <option value="20000">20000 usd</option>
+                    <option value="25000">25000 usd</option>
+                    <option value="50000">50000 usd</option>
+                    <option value="100000">100000 usd</option>
+                </select>
+                <select name="do_price" id="priceTo" data-placeholder="до">
+                    <option value="0">до</option>
+                    <option value="0">0 usd</option>
+                    <option value="5000">5000 usd</option>
+                    <option value="10000">10000 usd</option>
+                    <option value="15000">15000 usd</option>
+                    <option value="20000">20000 usd</option>
+                    <option value="25000">25000 usd</option>
+                    <option value="50000">50000 usd</option>
+                    <option value="100000">100000 usd</option>
+                </select>
+                <br>
+                <p><strong>Рік випуску</strong></p>
+                <select name="vid_year" id="ot_from_year" data-placeholder="від">
+                    <option value="0">від</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                </select>
+                <select name="do_year" id="do_from_year" data-placeholder="до">
+                    <option value="0">до</option>
+                    <option value="2022">2022</option>
+                    <option value="2021">2021</option>
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                </select>
+                <br>
+                <p><strong>Cтан</strong></p>
+                <select class="second" name="condition" multiple="multiple" size="4">
+                    <option value="Всі">Всі</option>
+                    <option value="Бита">Бита</option>
+                    <option value="У кредиті">У кредиті</option>
+                    <option value="Нерозмитнена">Нерозмитнена</option>
+                </select>
+                <p><strong>Тип палива</strong></p>
+                <select class="second" name="type_fuel">
+                    <option value="Всі">Всі</option>
+                    <option value="Бензин">Бензин</option>
+                    <option value="Дизель">Дизель</option>
+                    <option value="Газ">Газ</option>
+                    <option value="Електро">Електро</option>
+                </select>
+                <p><strong>Тип коробки передач</strong></p>
+                <select class="second" name="transmission" id="transmission">
+                    <option value="Всі">Всі</option>
+                    <option value="Механіка">Механіка</option>
+                    <option value="Автомат">Автомат</option>
+                    <option value="Електро">Електро</option>
+                </select>
+                <p><strong>Комфорт</strong></p>
+                <select class="second" name="condition" multiple="multiple" size="4">
+                    <option value="Люк">Люк</option>
+                    <option value="Шкіряний салон">Шкіряний салон</option>
+                    <option value="Клімат контроль">Клімат контроль</option>
+                    <option value="Паркторонік">Паркторонік</option>
+                    <option value="Підігрів сидінь">Підігрів сидінь</option>
+                </select>
+                <p><strong>Колір</strong></p>
+                <select name="color">
+                    <option value="Всі">Всі</option>
+                    <option value="Білий">Білий</option>
+                    <option value="Чорний">Чорний</option>
+                    <option value="Червоний">Червоний</option>
+                    <option value="Жовтий">Жовтий</option>
+                    <option value="Синій">Синій</option>
+                </select>
+                <br>
+                <input type="submit" value="Пошук">
+            </form>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+
+</html>
