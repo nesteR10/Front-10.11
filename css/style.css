@@ -1,0 +1,50 @@
+.container {
+    width: 100%;
+    max-width: calc(1110px + 2rem);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.menu {
+    display: flex;
+}
+.menu li{
+    min-width: 250px;
+    list-style: none;
+    background: rgb(33, 55, 80); 
+    position: relative;
+}
+.menu a {
+    color: rgb(237, 237, 225);
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding: 0 10px;
+    height: 80px;
+    line-height: 80px;
+    transition: all .5s;
+}
+.menu a:hover{
+    background-color: rgb(86, 206, 228);
+}
+.menu ul{
+    position: absolute;
+    left: 0;
+    top: 100%;
+    display: none;
+    padding: 0;
+}
+.menu li:hover > ul{
+    display: block;
+}
+.menu ul ul{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+li:hover > a,
+a:hover {
+    background-color: rgb(86, 206, 228);
+}
